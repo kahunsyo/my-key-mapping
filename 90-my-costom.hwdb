@@ -1,0 +1,8 @@
+evdev:input:b0003v*p*
+ KEYBOARD_KEY_70039=tab
+ KEYBOARD_KEY_7008b=backspace
+ KEYBOARD_KEY_70048=end
+ KEYBOARD_KEY_70090=katakanahiragana
+ KEYBOARD_KEY_70091=insert
+ KEYBOARD_KEY_70088=muhenkan
+ KEYBOARD_KEY_70049=hanguel
