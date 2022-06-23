@@ -4,14 +4,14 @@ It update udev DB configulation.
 
 # Usage
 Auto installing script is available.
-It copies hwdb file to /etc/udev/hddb.d and updates udev DB. It overwrites a file, if a file of same name is exist.
+It copies hwdb file to ```/etc/udev/hddb.d``` and updates udev DB. It overwrites a file, if a file of same name is exist.
 ```
 sudo ./install.bash
 ```
 
 # Tuning
-## First you have to know key codes for remapping
-Run and proper event file.
+## First, know key codes for remapping
+Run following a command and proper event file.
 ```
 sudo evtest
 ```
@@ -27,14 +27,14 @@ Format is
 ```
 evdev:input:b${bus}v${vendor}p${product}
 ```
-.Where things in ${} are the numbers that are in ```Input device ID: ***```, padded with 0s to be length 4 and capitalized.
+Where things in ${} are the numbers that are in ```Input device ID: ***```, padded with 0s to be length 4 and capitalized.
 ```*``` wildcard character can be used.
 
-## write mapping settings
+## Second, write mapping settings
 Write above setting fisrt line in hwdb file, and add below key mapping settings.
 This means key that have 70039 of key code is converted into tab key.
 ```
 KEYBOARD_KEY_70039=tab
 ```
-Head number in file name means priority to load. Smaller number is High priority.
+Head number in file name means a priority to load. Smaller number is a high priority.
 Following name is anything you want to.
