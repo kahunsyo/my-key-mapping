@@ -7,7 +7,7 @@ Auto installing script is available.
 **However, you need to rewrite a first line that specify a device, keyboard, code in hwdb file.** Sorry. Details are at Turning section.
 It copies hwdb file to ```/etc/udev/hddb.d``` and updates udev DB. It overwrites a file, if a file of same name is exist.
 ```
-sudo ./install.bash
+sudo ./install.sh
 ```
 
 # Tuning
